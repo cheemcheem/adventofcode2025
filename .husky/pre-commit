@@ -1,0 +1,5 @@
+# https://adventofcode.com/2025/about#faq_copying
+git reset HEAD challenge/inputs
+git update-index --assume-unchanged challenge/inputs/*
+
+pnpm lint

@@ -1,0 +1,36 @@
+{
+  "name": "@cheemcheem/adventofcode",
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "24.11.1",
+    "pnpm": "10.24.0"
+  },
+  "packageManager": "pnpm@10.24.0",
+  "scripts": {
+    "commit": "pnpm --filter @cheemcheem/adventofcode-commit-helper start",
+    "typecheck": "pnpm --filter=!@cheemcheem/adventofcode-config-types exec tsc --noEmit",
+    "lint": "eslint --fix .",
+    "prepare": "husky",
+    "start": "pnpm --filter @cheemcheem/adventofcode-challenge-runner start"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@eslint/json": "^0.14.0",
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "@cheemcheem/adventofcode-config-types": "workspace:*",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.6.1",
+    "lint-staged": "^16.2.7",
+    "typescript-eslint": "^8.48.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,mjs,ts,tsx,mts}": [
+      "eslint --fix"
+    ]
+  }
+}

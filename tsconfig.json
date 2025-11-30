@@ -1,0 +1,7 @@
+{
+    "extends": "@cheemcheem/adventofcode-config-types",
+    "include": ["*.ts", "*.mts"],
+    "compilerOptions": {
+      "noEmit": true
+    }
+}

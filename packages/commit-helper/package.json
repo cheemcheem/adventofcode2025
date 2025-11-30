@@ -1,0 +1,16 @@
+{
+  "name": "@cheemcheem/adventofcode-commit-helper",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --log-level=error && node dist/index.js"
+  },
+  "devDependencies": {
+    "@cheemcheem/adventofcode-config-types": "workspace:*",
+    "@types/yargs": "^17.0.33",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.7.2",
+    "yargs": "^17.7.2"
+  },
+  "author": "Kathan Cheema"
+}

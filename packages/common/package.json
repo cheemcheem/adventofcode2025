@@ -1,0 +1,19 @@
+{
+  "name": "@cheemcheem/adventofcode-common",
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js && cp -r src/inputs/ dist",
+    "start": "pnpm run dev"
+  },
+  "devDependencies": {
+    "@cheemcheem/adventofcode-config-types": "workspace:*",
+    "@types/yargs": "^17.0.33",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.7.2",
+    "yargs": "^17.7.2"
+  },
+  "author": "Kathan Cheema"
+}
