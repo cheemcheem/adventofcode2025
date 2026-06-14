@@ -8,7 +8,7 @@
   "devDependencies": {
     "@cheemcheem/adventofcode-config-types": "workspace:*",
     "@types/yargs": "^17.0.33",
-    "esbuild": "^0.27.0",
+    "esbuild": "^0.28.1",
     "typescript": "^5.7.2",
     "yargs": "^17.7.2"
   },
